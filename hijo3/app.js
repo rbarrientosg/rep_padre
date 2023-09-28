@@ -12,7 +12,7 @@ const persona = {
 };
 
 if (login(auth)) {
-  console.log("Login correcto");
+  console.log("Bienvenido " + persona.Nombre + " al sistema");
 } else {
   console.log("Login incorrecto");
 }
