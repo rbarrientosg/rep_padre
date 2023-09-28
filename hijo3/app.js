@@ -1,3 +1,12 @@
-const auth = require("../hijo1/app.js");
+const { login } = require("../hijo1/app.js");
 
-console.log("Usuario:", auth.Usuario, "\nContraseña:", auth.Contraseña);
+const auth = {
+  Usuario: "admin",
+  Contraseña: "1234",
+};
+
+if (login(auth)) {
+  console.log("Login correcto");
+} else {
+  console.log("Login incorrecto");
+}

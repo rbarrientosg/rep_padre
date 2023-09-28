@@ -3,4 +3,11 @@ const auth = {
   Contraseña: "1234",
 };
 
-module.export = { auth };
+function login(authExternal) {
+  return (
+    auth.Usuario === authExternal.Usuario &&
+    auth.Contraseña === authExternal.Contraseña
+  );
+}
+
+module.exports = { login };
