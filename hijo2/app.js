@@ -5,6 +5,12 @@ const auth = {
   Contraseña: "feliz",
 };
 
+const persona = {
+  Nombre: "Juan",
+  Edad: 20,
+  Direccion: "Calle 1",
+};
+
 if (login(auth)) {
   console.log("Login correcto");
 } else {
